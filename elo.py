@@ -1,5 +1,4 @@
 import argparse
-from playerDB import playerDB
 import os.path
 import json
 
@@ -48,7 +47,9 @@ playerDB[a] = newRatingA
 newRatingB = ratingB + (k * (actualB - expectedB))
 playerDB[b] = newRatingB
 print(a + ' new rating: ' + str(newRatingA))
+print(newRatingA - ratingA)
 print(b + ' new rating: ' + str(newRatingB))
+print(newRatingB - ratingB)
 
 dbFile.close()
 
